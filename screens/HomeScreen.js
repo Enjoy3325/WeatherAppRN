@@ -70,10 +70,9 @@ const HomeScreen = () => {
 			setLoading(false);
 		}
 	};
+
 	const handleTextDebounce = useCallback(debounce(handleSearch, 1000), []);
 	const { current, location } = weather;
-
-	console.log(weather?.forecast?.forecastday);
 
 	return (
 		<View className="flex-1 relative">
